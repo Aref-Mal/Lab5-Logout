@@ -178,7 +178,9 @@ public class SignupView extends JPanel implements ActionListener, PropertyChange
 
     @Override
     public void actionPerformed(ActionEvent evt) {
-        JOptionPane.showMessageDialog(this, "Cancel not implemented yet.");
+        if (evt.getSource().equals(cancel)) {
+            System.exit(0);
+        }
     }
 
     @Override
